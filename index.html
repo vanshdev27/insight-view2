@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight View - Advanced Data Analytics & Cybersecurity Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="logo-container">
+                <div class="logo-3d">
+                    <div class="logo-text">
+                        <span class="logo-insight">Insight</span>
+                        <span class="logo-view">View</span>
+                    </div>
+                    <div class="logo-particles"></div>
+                </div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Initializing Advanced Analytics...</p>
+        </div>
+        <div class="preloader-bg"></div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+
+
+        
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-3d-nav">
+                    <span class="logo-insight">Insight</span>
+                    <span class="logo-view">View</span>
+                </div>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#programs" class="nav-link">Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#verify" class="nav-link">Verify Certificate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </li>
+                
+            </ul>
+           
+            <div class="nav-cta" style="display: flex; gap: 1rem;">
+  <button class="btn btn-secondary nav-btn" id="openLogin">Login</button>
+  <button class="btn btn-primary nav-btn">Get Started</button>
+</div>
+
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <canvas id="hero-canvas"></canvas>
+            <div class="gradient-overlay"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <span class="badge-text">🚀 Next-Gen Analytics Platform</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Transform Data Into</span>
+                    <span class="title-line gradient-text">Intelligent Insights</span>
+                    <span class="title-line">With AI Precision</span>
+                </h1>
+                <p class="hero-description">
+                    Pioneering the future of data analytics, cybersecurity, and network solutions. 
+                    Empowering businesses with cutting-edge technology and AI-driven insights.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="150">0</span>
+                        <span class="stat-label">Enterprise Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="99">0</span>
+                        <span class="stat-label">% Success Rate</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large">
+                        <span>Explore Solutions</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary btn-large">
+                        <i class="fas fa-play"></i>
+                        <span>Watch Demo</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200">
+                <div class="floating-dashboard">
+                    <div class="dashboard-card card-analytics">
+                        <div class="card-header">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Real-time Analytics</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="chart-placeholder"></div>
+                        </div>
+                    </div>
+                    <div class="dashboard-card card-security">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security Monitor</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="security-status">
+                                <div class="status-indicator active"></div>
+                                <span>All Systems Secure</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-card card-network">
+                        <div class="card-header">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Network Health</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="network-nodes">
+                                <div class="node"></div>
+                                <div class="node"></div>
+                                <div class="node"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">About Insight View</div>
+                <h2>Pioneering the Future of <span class="gradient-text">Data Intelligence</span></h2>
+                <p>We're not just another tech company. We're innovators, problem-solvers, and visionaries building the next generation of data-driven solutions.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-visual" data-aos="fade-right">
+                    <div class="tech-sphere">
+                        <canvas id="tech-sphere-canvas"></canvas>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>AI-Powered Analytics</h4>
+                                <p>Leverage machine learning algorithms to uncover hidden patterns and predict future trends with unprecedented accuracy.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Advanced Cybersecurity</h4>
+                                <p>Protect your digital assets with our next-generation security solutions powered by AI threat detection.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Scalable Infrastructure</h4>
+                                <p>Build robust, scalable network solutions that grow with your business and adapt to changing demands.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Our Programs</div>
+                <h2>Comprehensive <span class="gradient-text">Learning Pathways</span></h2>
+                <p>Master cutting-edge technologies with our industry-leading certification programs</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Data Analytics Mastery</h3>
+                        <p>Transform raw data into actionable insights with advanced analytics techniques and visualization tools.</p>
+                        <div class="program-features">
+                            <span class="feature-tag">Python & R</span>
+                            <span class="feature-tag">Machine Learning</span>
+                            <span class="feature-tag">Data Visualization</span>
+                        </div>
+                        <div class="program-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>12 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="program-hover-effect"></div>
+                </div>
+                <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Data Science Excellence</h3>
+                        <p>Master the complete data science pipeline from data collection to model deployment and monitoring.</p>
+                        <div class="program-features">
+                            <span class="feature-tag">Deep Learning</span>
+                            <span class="feature-tag">MLOps</span>
+                            <span class="feature-tag">Big Data</span>
+                        </div>
+                        <div class="program-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>16 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="program-hover-effect"></div>
+                </div>
+                <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Cybersecurity Specialist</h3>
+                        <p>Become an expert in protecting digital assets with comprehensive cybersecurity training.</p>
+                        <div class="program-features">
+                            <span class="feature-tag">Ethical Hacking</span>
+                            <span class="feature-tag">Threat Analysis</span>
+                            <span class="feature-tag">Security Auditing</span>
+                        </div>
+                        <div class="program-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>14 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="program-hover-effect"></div>
+                </div>
+                <div class="program-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="program-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="program-content">
+                        <h3>Network Architecture</h3>
+                        <p>Design and implement robust network infrastructures for modern enterprise environments.</p>
+                        <div class="program-features">
+                            <span class="feature-tag">Cloud Networks</span>
+                            <span class="feature-tag">SDN</span>
+                            <span class="feature-tag">Network Security</span>
+                        </div>
+                        <div class="program-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>10 Weeks</span>
+                        </div>
+                    </div>
+                    <div class="program-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verify Certificate Section -->
+    <section id="verify" class="verify-section">
+        <div class="container">
+            <div class="verify-content">
+                <div class="verify-text" data-aos="fade-right">
+                    <div class="section-badge">Certificate Verification</div>
+                    <h2>Verify Your <span class="gradient-text">Achievement</span></h2>
+                    <p>Validate the authenticity of Insight View certificates with our secure blockchain-based verification system.</p>
+                    <div class="verify-features">
+                        <div class="verify-feature">
+                            <i class="fas fa-certificate"></i>
+                            <span>Blockchain Secured</span>
+                        </div>
+                        <div class="verify-feature">
+                            <i class="fas fa-shield-check"></i>
+                            <span>Tamper Proof</span>
+                        </div>
+                        <div class="verify-feature">
+                            <i class="fas fa-globe"></i>
+                            <span>Globally Recognized</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="verify-form-container" data-aos="fade-left">
+                    <div class="verify-form">
+                        <h3>Enter Certificate ID</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Certificate ID (e.g., IV-2024-001234)" class="verify-input">
+                            <button class="btn btn-primary verify-btn">
+                                <i class="fas fa-search"></i>
+                                Verify
+                            </button>
+                        </div>
+                        <div class="verify-result" id="verify-result">
+                            <!-- Verification result will appear here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Success Stories</div>
+                <h2>What Our <span class="gradient-text">Clients Say</span></h2>
+                <p>Hear from industry leaders who've transformed their businesses with our solutions</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="swiper testimonialSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p>"Insight View's analytics platform revolutionized our decision-making process. We've seen a 300% improvement in operational efficiency."</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Sarah Johnson">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Sarah Johnson</h4>
+                                        <span>CTO, TechCorp Global</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p>"The cybersecurity solutions provided by Insight View gave us complete peace of mind. Their AI-powered threat detection is unmatched."</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Michael Chen">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Michael Chen</h4>
+                                        <span>CISO, SecureBank</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="quote-icon">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p>"Their data science expertise helped us implement ML models that transformed our business processes. ROI exceeded expectations by 400%."</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Emily Rodriguez">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Emily Rodriguez</h4>
+                                        <span>VP Analytics, DataFlow Inc</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge">Get In Touch</div>
+                <h2>Ready to Transform Your <span class="gradient-text">Business?</span></h2>
+                <p>Let's discuss how our cutting-edge solutions can drive your success</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Headquarters</h4>
+                                <p>123 Innovation Drive<br>Tech District, San Francisco<br>CA 94105, USA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>hello@insightview.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Business Hours</h4>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM PST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="data-analytics">Data Analytics</option>
+                                <option value="data-science">Data Science</option>
+                                <option value="cybersecurity">Cybersecurity</option>
+                                <option value="network-solutions">Network Solutions</option>
+                                <option value="consulting">Consulting</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-insight">Insight</span>
+                        <span class="logo-view">View</span>
+                    </div>
+                    <p>Transforming data into intelligent insights for the future of business. Leading the revolution in AI-powered analytics and cybersecurity.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="#">Data Analytics Mastery</a></li>
+                        <li><a href="#">Data Science Excellence</a></li>
+                        <li><a href="#">Cybersecurity Specialist</a></li>
+                        <li><a href="#">Network Architecture</a></li>
+                        <li><a href="#">AI & Machine Learning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Enterprise Analytics</a></li>
+                        <li><a href="#">Security Consulting</a></li>
+                        <li><a href="#">Network Design</a></li>
+                        <li><a href="#">Custom Development</a></li>
+                        <li><a href="#">Training & Certification</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Insight View. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+    
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const circle = document.createElement('div');
+    circle.id = 'cursor-circle';
+    document.body.appendChild(circle);
+
+    const style = document.createElement('style');
+    style.textContent = `
+      #cursor-circle {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        background: rgba(0, 212, 255, 0.15);
+        border: 2px solid #00d4ff;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: transform 0.05s ease, background 0.2s ease;
+        z-index: 9999;
+      }
+    `;
+    document.head.appendChild(style);
+
+    document.addEventListener('mousemove', (e) => {
+      circle.style.left = `${e.clientX}px`;
+      circle.style.top = `${e.clientY}px`;
+    });
+
+    document.querySelectorAll('a, button, .btn, .nav-link').forEach((el) => {
+      el.addEventListener('mouseenter', () => {
+        circle.style.background = 'rgba(0, 212, 255, 0.4)';
+      });
+      el.addEventListener('mouseleave', () => {
+        circle.style.background = 'rgba(0, 212, 255, 0.15)';
+      });
+    });
+  });
+</script>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Insight View By VANSH DEV. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Login Modal -->
+<div class="login-modal" id="loginModal">
+  <div class="login-modal-content">
+    <span class="close-btn" id="closeLogin">&times;</span>
+    <h2>Login to Insight View</h2>
+    <form class="login-form">
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+    
+</body>
+</html>
